@@ -1,6 +1,6 @@
 body {
-    background: #acd1af
-    color: #97cf8a;
+    background: white;
+    color: white;
     padding: 10px;url(https://greenlight.operationspark.org/sessions/kw8aF5Y4kjifL3GTF/projects/f4PiHbizg77ZLCe5A)
     font-family: Arial, sans-serif;
 }
@@ -12,7 +12,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: #acd1af;
+    background: #A5E1A6;
     margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -22,13 +22,14 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: #7a9f79;
+    color: #ffffff;
     flex: 1;
     margin: 0;
 }
 
 #nav-ul {
     list-style-type: none;
+    color:#ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -41,12 +42,12 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #b1dd9e;
+    color: #ffffff;
 }
 
 /* main container area beneath menu */
 main {
-    background: #97cf8a;
+    background: #A5E1A6;
     display: flex;
     margin-top: 20px;
 }
@@ -65,7 +66,6 @@ main {
     padding: 15px;
 }
 
-/* interests section styles */
 #interests {
     border: 4px silver ridge;
     padding: 8px;
@@ -74,4 +74,32 @@ main {
 
 h2, h3 {
     margin: 0px;
+}
+
+
+
+/* Portfolio styles */
+.content h1 {
+  color: rgb(255, 255, 255);
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #eee;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #454545;
 }
