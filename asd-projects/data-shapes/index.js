@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 // TODO 0 complete
  let shape = {
-  color: "pink",
+  color: "blue",
   shape: "circle",
   repeat: 3
 };
@@ -48,9 +48,9 @@ dataShapes.push(shape);
   for (let i = 0; i < dataShapes.length; i++) {
   let currentShape = dataShapes[i];
 
-  if (currentShape.color === "pink") {
+  if (currentShape.color === "red") {
     currentShape.goodBehavior = "bounce";
-  } else if (currentShape.color === "yellow") {
+  } else if (currentShape.color === "green") {
     currentShape.goodBehavior = "blink";
   } else {
     currentShape.goodBehavior = "spin";
@@ -85,14 +85,14 @@ dataShapes.push(shape);
   }
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
-     shape = dataShapes[currentIndex];
+    let  currentShape = dataShapes[currentIndex];
 handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
   }
 
   function badDisplay() {
     // TODO 5-b: call your handleBad function
-    shape = dataShapes[currentIndex];
-handleBad(shape, shape.repeat);
+    let currentShape = dataShapes[currentIndex];
+handleBad(currentShape, currentShape.repeat);
   }
 
   /////////////////////////////////////////////////
@@ -102,7 +102,7 @@ handleBad(shape, shape.repeat);
   // This function generates objects for 26 of the necessary 27 entries into the dataShapes array that is used for most of this program
   function generateShapeData() {
     const data = [];
-    const colors = ["pink", "yellow", "orange"];
+    const colors = ["red", "green", "blue"];
     const shapes = ["square", "triangle", "circle"];
     const repeats = [1, 2, 3];
 
