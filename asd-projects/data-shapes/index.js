@@ -46,14 +46,14 @@ $(document).ready(function () {
 dataShapes.push(shape);
   // TODO 2: add a new property to all data shapes
   for (let i = 0; i < dataShapes.length; i++) {
-  let shape = dataShapes[i];
+  let currentShape = dataShapes[i];
 
-  if (shape.color === "pink") {
-    shape.goodBehavior = "bounce";
-  } else if (shape.color === "yellow") {
-    shape.goodBehavior = "blink";
+  if (currentShape.color === "pink") {
+    currentShape.goodBehavior = "bounce";
+  } else if (currentShape.color === "yellow") {
+    currentShape.goodBehavior = "blink";
   } else {
-    shape.goodBehavior = "spin";
+    currentShape.goodBehavior = "spin";
   }
 }
 
@@ -86,7 +86,7 @@ dataShapes.push(shape);
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
      shape = dataShapes[currentIndex];
-handleGood(shape.color, shape.shape, shape.repeat);
+handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
   }
 
   function badDisplay() {
