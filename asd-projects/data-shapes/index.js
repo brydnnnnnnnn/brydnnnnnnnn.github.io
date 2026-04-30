@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 // TODO 0 complete
  let shape = {
-  color: "blue",
+  color: "pink",
   shape: "circle",
   repeat: 3
 };
@@ -102,7 +102,7 @@ handleBad(shape, shape.repeat);
   // This function generates objects for 26 of the necessary 27 entries into the dataShapes array that is used for most of this program
   function generateShapeData() {
     const data = [];
-    const colors = ["red", "green", "blue"];
+    const colors = ["pink", "yellow", "orange"];
     const shapes = ["square", "triangle", "circle"];
     const repeats = [1, 2, 3];
 
