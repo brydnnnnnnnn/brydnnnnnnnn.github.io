@@ -48,9 +48,9 @@ dataShapes.push(shape);
   for (let i = 0; i < dataShapes.length; i++) {
   let shape = dataShapes[i];
 
-  if (shape.color === "red") {
+  if (shape.color === "pink") {
     shape.goodBehavior = "bounce";
-  } else if (shape.color === "blue") {
+  } else if (shape.color === "yellow") {
     shape.goodBehavior = "blink";
   } else {
     shape.goodBehavior = "spin";
